@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body{
+    height: 100vh;
+    background-color: #202124;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #202124;
+    width: 100%;
+    max-height: 60px;
+}
+
+.navbar{
+    padding: 0, 0.4rem, 0, 3.2rem;
+}
+
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0, 0.4rem, 0, 3.2rem;
+}
+
+ul li{
+    list-style: none;
+    padding: 0 1rem 0 0;
+    cursor: pointer;
+    padding: 0, 0.4rem, 0, 3.2rem;
+}
+
+ul li a{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: #ffff;
+    font-family: arial, sans-serif;
+    font-size: 1.3rem;
+    padding: 0, 0.4rem, 0, 3.2rem;
+}
+
+.grid{
+    width: 4rem;
+    padding: 0.8rem;
+    margin-left: 1.5rem;
+}
+
+.user{
+    width: 4rem;
+    height: 4rem;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+
+
+ul li a:hover{
+    text-decoration: underline;
+}
+
+ul li img:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.logo-section{
+    background-color: #202124;
+    display: flex;
+    flex-shrink: 0;
+    align-items:center;
+    justify-content: center;
+    height: 22rem;
+    padding: 0;
+}
+
+.logo{
+    width: 38rem;
+}
+
+.search-section{
+    width: 100%;
+    min-height: 14.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202124;
+
+}
+
+.searchBar{
+    max-width: 58.4rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    text-align: center;
+    border: 0.2px solid #4b4b4b;;
+    border-radius: 50px;
+    padding: 0.5rem 0.8 0 1.4rem;
+
+}
+
+#magnifying-glass{
+    width: 2rem;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+    filter: invert(97%) sepia(1%) saturate(833%) hue-rotate(123deg) brightness(78%) contrast(100%);
+}
+
+#textarea{
+    width: 44.3rem;
+    font-family: arial,sans-serif;
+    font-size: 1.6rem;
+    text-align: start;
+    appearance: auto;
+    align-items: center;
+    line-height: 22px;
+    margin: 0 0 0 0.8rem;
+    overflow: hidden;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    padding: 0.8rem 0 0 0;
+    color: #e8eaed;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#camera{
+    width: 2.4rem;
+    margin-left: 1rem;
+    padding: 0.3rem;
+    filter: invert(97%) sepia(1%) saturate(833%) hue-rotate(123deg) brightness(78%) contrast(100%);
+    cursor: pointer;
+    
+}
+#mic{
+    width: 2rem;
+    margin-left: 1rem;
+    padding: 0.3rem;
+    filter: invert(97%) sepia(1%) saturate(833%) hue-rotate(123deg) brightness(78%) contrast(100%);
+    cursor: pointer;
+    
+}
+
+.searchBar:hover{
+    background-color: #303134;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+
+.searchButtons{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: -webkit-center;
+    width: 58.4rem;
+    height: 5.8rem;
+    margin-top: 0.4rem;
+    padding: 1.8rem 0 0 ;
+}
+
+.button{
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: arial,sans-serif;
+    font-size: 1.4rem;
+    margin: 1.2rem 0.7rem;
+    padding: 0 1.6rem;
+    line-height: 2.7rem;
+    height: 3.6rem;
+    min-width: 5.4rem;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover{
+    border: 0.3px solid #e8eaedc4;
+}
+
+/* ----------------------------------language section------------------------------------- */
+.language-section{
+    width: 100%;
+    height: 24.6rem;
+    background-color: #202124;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.languages{
+    padding-bottom: 20rem;
+}
+.language-section span{
+    font-family: arial, sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    color: #bdc1c6 ;
+
+}
+.language-section a{
+    text-decoration: none;
+    color: #8ab4f8;
+    line-height: 2.8rem;
+    font-size: 1.8rem;
+    padding-left: 0.8rem;
+    
+}
+
+.language-section a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*------------footer-------*/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.country{
+    background-color: #171717;
+    height: 4.8rem;
+}
+
+.india{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.5rem 3rem;
+    border-bottom: 1px solid #3c4043;
+    font-size: 1.5rem;
+    color: #9aa0a6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/*--------------options section-------*/
+
+.options{
+    background-color: #171717;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: between;
+    height: 46px;
+}
+
+.options-list{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 5rem; 
+}
+
+.right-options {
+    display: flex;
+    position: absolute;
+    right: 30px;
+}
+
+.left-options{
+    display: flex;
+
+}
+
+.options ul li a{
+
+    color: #999da2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+
+
+/*-----------media Queries---------*/
+
+@media only screen and (max-width: 768px){
+    *{
+        font-size: 9px;
+    }
+    body{
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    *{
+        font-size: 7px;
+    }
+    body{
+        overflow: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 530px){
+    *{
+        font-size: 6px;
+    }
+    .languages{
+        padding-bottom:10rem;
+    }
+    .button{
+        padding-bottom:4rem;
+    }
+
+}
+@media only screen and (max-width: 480px){
+    *{
+        font-size: 5px;
+    }
+
+    .languages{
+        padding-bottom:6rem;
+    }
+
+    .button{
+        padding-bottom:5rem;
+    }
+
+}
+@media only screen and (max-width: 390px){
+    *{
+        font-size: 4px;
+    }
+
+    .languages{
+        padding-bottom:2rem;
+    }
+
+    .button{
+        padding-bottom:4rem;
+        margin-top: 6rem;
+        height:10rem;
+    }
+
+}
+@media only screen and (max-width: 290px){
+    *{
+        font-size: 3.5px;
+    }
+
+    .languages{
+        padding-bottom:2rem;
+    }
+
+    .search-section{   
+        min-height: 20rem;
+    }
+
+    .searchBar{
+        height: 6rem;
+    }
+    .searchButtons{
+        height:fit-content;
+    }
+
+    .button{
+        height:8rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+
+
+}
+
+
